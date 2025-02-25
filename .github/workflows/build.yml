@@ -31,7 +31,7 @@ jobs:
           if git checkout origin/update build.md; then
             UPDATE_CFG=$(./build.sh config.toml --config-update)
             if [ "$UPDATE_CFG" ]; then
-              echo "$UPDATE_CFG" > config.json
+              echo "$UPDATE_CFG" > config.toml
             fi
           fi
 
@@ -45,7 +45,7 @@ jobs:
           echo "NEXT_VER_CODE=$((TAG + 1))" >> $GITHUB_OUTPUT
 
       - name: Build modules/APKs
-        run: if [ -f "config.json" ]; then ./build.sh config.json; else ./build.sh config.toml; fi
+        run: ./build.sh config.toml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: $GITHUB_REPOSITORY
@@ -61,12 +61,12 @@ jobs:
           cp -f build.md build.tmp
 
       - name: Upload modules to release
-        uses: svenstaro/upload-release-action@v2
+        uses: svenstaro/upload-release-action@2.7.0
         with:
           body: ${{ steps.get_output.outputs.BUILD_LOG }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: ./build/*
-          release_name: ReVanced
+          release_name: RVX App
           tag: ${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}
           file_glob: true
           overwrite: true
@@ -112,9 +112,9 @@ jobs:
           TG_TOKEN: ${{ secrets.TG_TOKEN }}
         if: env.TG_TOKEN != null
         run: |
-          cd build || { echo "build folder not found"; exit 1; }
+          cd build || { echo "Build folder not found"; exit 1; }
 
-          TG_CHAT="@rvc_magisk"
+          TG_CHAT="@rvxc_magisk"
           NL=$'\n'
           APKS=""
           MODULES=""
