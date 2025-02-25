@@ -1,13 +1,22 @@
-enable-magisk-update = true   # set this to false if you do not want to receive updates for the module in magisk app
-parallel-jobs = 1
-
 # add 'enabled = false' for not patching a specific app or remove it from the config
 # see https://github.com/cvnertnc/rvx-app/blob/main/CONFIG.md for more detailed explanations
-
 # you can use rvmm-config-gen to generate a config
 
+enable-magisk-update = true
+parallel-jobs = 1
+compression-level = 9
+remove-rv-integrations-checks = true
+
+patches-source = "anddea/revanced-patches"
+cli-source = "inotia00/revanced-cli"
+rv-brand = "RVX App"
+
+patches-version = "latest"
+cli-version = "latest"
+
 [YouTube]
-build-mode = "both"
-included-patches = "'Custom branding icon for YouTube' 'MaterialYou'"
-excluded-patches = "'Custom double tap length' 'Description components' 'Disable splash animation' 'Enable gradient loading screen' 'Hide comments components' 'Hide feed flyout menu' 'Overlay buttons' 'Swipe controls' 'Theme'"
+build-mode = "module"
+included-patches = "'Remove background playback restrictions' 'Custom header for YouTube'"
+excluded-patches = "'Alternative thumbnails' 'Custom Shorts action buttons' 'Disable splash animation' 'Enable gradient loading screen' 'Force player buttons background' 'Hide action buttons' 'Hide feed components' 'Hide feed flyout menu' 'Hook download actions' 'Miniplayer' 'Overlay buttons' 'Shorts components' 'Swipe controls' 'Theme'"
+version = "auto"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
