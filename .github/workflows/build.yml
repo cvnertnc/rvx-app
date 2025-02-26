@@ -28,6 +28,7 @@ jobs:
       - name: Update config
         if: ${{ inputs.from_ci }}
         run: |
+          chmod +x bin/toml/tq-x86_64
           if git checkout origin/update build.md; then
             UPDATE_CFG=$(./build.sh config.toml --config-update)
             if [ "$UPDATE_CFG" ]; then
