@@ -15,7 +15,7 @@ patches-version = "latest"
 cli-version = "latest"
 
 [YouTube]
-build-mode = "module"
+build-mode = "both"
 included-patches = "'Remove background playback restrictions' 'Custom header for YouTube'"
 excluded-patches = "'Alternative thumbnails' 'Custom Shorts action buttons' 'Disable splash animation' 'Enable gradient loading screen' 'Force player buttons background' 'Hide action buttons' 'Hide feed components' 'Hide feed flyout menu' 'Hook download actions' 'Miniplayer' 'Overlay buttons' 'Shorts components' 'Swipe controls' 'Theme'"
 version = "auto"
