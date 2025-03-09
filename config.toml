@@ -12,7 +12,7 @@ cli-source = "inotia00/revanced-cli"
 rv-brand = "RVX App"
 
 patches-version = "dev"
-cli-version = "latest"
+cli-version = "dev"
 
 [YouTube]
 build-mode = "both"
