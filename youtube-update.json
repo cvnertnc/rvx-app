@@ -1,6 +1,6 @@
 {
-  "version": "v19.44.39 (patches: dev.4)",
-  "versionCode": 16,
-  "zipUrl": "https://github.com/cvnertnc/rvx-app/releases/download/16/youtube-rvx-app-magisk-v19.44.39-all.zip",
+  "version": "v19.44.39 (patches: dev.5)",
+  "versionCode": 17,
+  "zipUrl": "https://github.com/cvnertnc/rvx-app/releases/download/17/youtube-rvx-app-magisk-v19.44.39-all.zip",
   "changelog": "https://raw.githubusercontent.com/cvnertnc/rvx-app/update/build.md"
 }
