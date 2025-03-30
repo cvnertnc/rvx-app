@@ -16,7 +16,7 @@ cli-version = "dev"
 
 [YouTube]
 build-mode = "both"
-included-patches = "'Remove background playback restrictions' 'Custom header for YouTube'"
+included-patches = "'Custom header for YouTube'"
 excluded-patches = "'Alternative thumbnails' 'Custom Shorts action buttons' 'Disable splash animation' 'Enable gradient loading screen' 'Force player buttons background' 'Hide action buttons' 'Hide feed components' 'Hide feed flyout menu' 'Hook download actions' 'Miniplayer' 'Overlay buttons' 'Shorts components' 'Swipe controls' 'Theme'"
 version = "auto"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
