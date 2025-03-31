@@ -20,3 +20,9 @@ included-patches = "'Custom header for YouTube'"
 excluded-patches = "'Alternative thumbnails' 'Custom Shorts action buttons' 'Disable splash animation' 'Enable gradient loading screen' 'Force player buttons background' 'Hide action buttons' 'Hide feed components' 'Hide feed flyout menu' 'Hook download actions' 'Miniplayer' 'Overlay buttons' 'Shorts components' 'Swipe controls' 'Theme'"
 version = "auto"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
+
+[Spotify]
+build-mode = "apk"
+included-patches = "'Remove Create tab'"
+version = "auto"
+uptodown-dlurl = "https://spotify.en.uptodown.com/android"
