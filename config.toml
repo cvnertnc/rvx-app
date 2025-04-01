@@ -1,6 +1,7 @@
 # add 'enabled = false' for not patching a specific app or remove it from the config
 # see https://github.com/cvnertnc/rvx-app/blob/main/CONFIG.md for more detailed explanations
 # you can use rvmm-config-gen to generate a config
+# enabled = true/false
 
 enable-magisk-update = true
 parallel-jobs = 1
@@ -19,10 +20,22 @@ build-mode = "both"
 included-patches = "'Custom header for YouTube'"
 excluded-patches = "'Alternative thumbnails' 'Custom Shorts action buttons' 'Disable splash animation' 'Enable gradient loading screen' 'Force player buttons background' 'Hide action buttons' 'Hide feed components' 'Hide feed flyout menu' 'Hook download actions' 'Miniplayer' 'Overlay buttons' 'Shorts components' 'Swipe controls' 'Theme'"
 version = "auto"
+patcher-args = "-e 'Custom branding icon for YouTube' -OappIcon='revancify_red'"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
+uptodown-dlurl = "https://youtube.en.uptodown.com/android"
+
+[Music]
+build-mode = "both"
+arch = "arm64-v8a"
+included-patches = "'Custom header for YouTube Music' 'Disable music video in album' 'Hide overlay filter' 'Hide player overlay filter'"
+excluded-patches = "'Dark theme'"
+version = "auto"
+patcher-args = "-e 'Custom branding icon for YouTube Music' -OappIcon='revancify_red'"
+apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music/"
+uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 
 [Spotify]
 build-mode = "apk"
-included-patches = "'Remove Create tab'"
+arch = "arm64-v8a"
 version = "auto"
 uptodown-dlurl = "https://spotify.en.uptodown.com/android"
