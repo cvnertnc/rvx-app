@@ -21,6 +21,13 @@ excluded-patches = "'Alternative thumbnails' 'Custom Shorts action buttons' 'Dis
 version = "auto"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 
+[Music]
+build-mode = "both"
+included-patches = "'Custom header for YouTube Music' 'Disable music video in album' 'Hide overlay filter' 'Hide player overlay filter'"
+excluded-patches = "'Dark theme'"
+version = "auto"
+apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music/"
+
 [Spotify]
 build-mode = "apk"
 included-patches = "'Remove Create tab'"
