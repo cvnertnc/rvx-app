@@ -16,6 +16,7 @@ patches-version = "dev"
 cli-version = "dev"
 
 [YouTube]
+enabled = true
 build-mode = "both"
 included-patches = "'Custom header for YouTube'"
 excluded-patches = "'Alternative thumbnails' 'Custom Shorts action buttons' 'Disable splash animation' 'Enable gradient loading screen' 'Force player buttons background' 'Hide action buttons' 'Hide feed components' 'Hide feed flyout menu' 'Hook download actions' 'Miniplayer' 'Overlay buttons' 'Shorts components' 'Swipe controls' 'Theme'"
@@ -25,6 +26,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 
 [Music]
+enabled = true
 build-mode = "both"
 arch = "arm64-v8a"
 included-patches = "'Custom header for YouTube Music' 'Disable music video in album' 'Hide overlay filter' 'Hide player overlay filter'"
@@ -35,7 +37,18 @@ apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music/"
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 
 [Spotify]
+enabled = true
+app-name = "Spotify"
 build-mode = "apk"
 arch = "arm64-v8a"
 version = "auto"
 uptodown-dlurl = "https://spotify.en.uptodown.com/android"
+
+[Spotify-module]
+enabled = true
+app-name = "Spotify"
+build-mode = "module"
+arch = "arm64-v8a"
+version = "auto"
+uptodown-dlurl = "https://spotify.en.uptodown.com/android"
+patcher-args = "-d 'Spoof signature'"
