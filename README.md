@@ -1,6 +1,7 @@
 #### ⚠️ [Original Repo](https://github.com/j-hc/revanced-magisk-module)
 
 # RVX-App
+[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/cvnertnc)
 [![CI](https://github.com/cvnertnc/rvx-app/actions/workflows/ci.yml/badge.svg?event=schedule)](https://github.com/cvnertnc/rvx-app/actions/workflows/ci.yml)
 
 Extensive RVX-App Builder
@@ -11,7 +12,7 @@ Use [**zygisk-detach**](https://github.com/j-hc/zygisk-detach) to detach YouTube
 
 <details><summary><big>Features</big></summary>
 <ul>
- <li>Support all present and future ReVanced Extended apps</li>
+ <li>Support all present and future ReVanced and <a href="https://github.com/inotia00/revanced-patches">ReVanced Extended</a> apps</li>
  <li> Can build Magisk modules and non-root APKs</li>
  <li> Updated daily with the latest versions of apps and patches</li>
  <li> Optimize APKs and modules for size</li>
@@ -31,6 +32,19 @@ To include/exclude patches or patch other apps
 [**See the list of patches**](https://j-hc.github.io/rvmm-config-gen/)
 
 Also see here [`CONFIG.md`](./CONFIG.md).
+
+## Building Locally
+### On Termux
+```console
+bash <(curl -sSf https://raw.githubusercontent.com/cvnertnc/rvx-app/main/build-termux.sh)
+```
+
+### On Desktop
+```console
+$ git clone https://github.com/cvnertnc/rvx-app
+$ cd rvx-app
+$ ./build.sh
+```
 
 ## Thanks
 [j-hc](https://github.com/j-hc)  
