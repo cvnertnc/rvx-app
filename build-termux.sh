@@ -49,7 +49,7 @@ else
 	pr "Cloning rvx-app."
 	git clone https://github.com/cvnertnc/rvx-app --depth 1
 	cd rvx-app
-	sed -i '/^enabled.*/d; /^\[.*\]/a enabled = false' config.toml
+	sed -i '/^enabled.*/d; /^\[.*\]/a enabled = true' config.toml
 	grep -q 'rvx-app' ~/.gitconfig 2>/dev/null ||
 		git config --global --add safe.directory ~/rvx-app
 fi
