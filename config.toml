@@ -44,11 +44,11 @@ arch = "arm64-v8a"
 version = "auto"
 uptodown-dlurl = "https://spotify.en.uptodown.com/android"
 
-[Spotify-module]
-enabled = true
-app-name = "Spotify"
-build-mode = "module"
-arch = "arm64-v8a"
-version = "auto"
-uptodown-dlurl = "https://spotify.en.uptodown.com/android"
-patcher-args = "-d 'Spoof signature'"
+# [Spotify-module]
+# enabled = true
+# app-name = "Spotify"
+# build-mode = "module"
+# arch = "arm64-v8a"
+# version = "auto"
+# uptodown-dlurl = "https://spotify.en.uptodown.com/android"
+# patcher-args = "-d 'Spoof signature'"
