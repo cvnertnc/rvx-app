@@ -43,6 +43,7 @@ build-mode = "apk"
 arch = "arm64-v8a"
 version = "auto"
 uptodown-dlurl = "https://spotify.en.uptodown.com/android"
+version = "9.0.36.683"
 
 # [Spotify-module]
 # enabled = true
