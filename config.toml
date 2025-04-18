@@ -44,6 +44,13 @@ arch = "arm64-v8a"
 version = "auto"
 uptodown-dlurl = "https://spotify.en.uptodown.com/android"
 
+[Reddit]
+enabled = true
+build-mode = "apk"
+arch = "arm64-v8a"
+version = "auto"
+uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
+
 # [Spotify-module]
 # enabled = true
 # app-name = "Spotify"
