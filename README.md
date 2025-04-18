@@ -33,19 +33,6 @@ To include/exclude patches or patch other apps
 
 Also see here [`CONFIG.md`](./CONFIG.md).
 
-## Building Locally
-### On Termux
-```console
-bash <(curl -sSf https://raw.githubusercontent.com/cvnertnc/rvx-app/main/build-termux.sh)
-```
-
-### On Desktop
-```console
-$ git clone https://github.com/cvnertnc/rvx-app
-$ cd rvx-app
-$ ./build.sh
-```
-
 ## Thanks
 [j-hc](https://github.com/j-hc)  
 [inotia00](https://github.com/inotia00)  
