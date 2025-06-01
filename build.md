@@ -1,6 +1,6 @@
 Music: 8.12.53  
 Reddit: 2025.12.1  
-Spotify: 9.0.46.496  
+Spotify: 9.0.48.380  
 YouTube: 19.47.53  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
@@ -9,17 +9,9 @@ Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach root ReVanc
 [rvx-app](https://github.com/cvnertnc/rvx-app)
   
 CLI: inotia00/revanced-cli-5.0.1-all.jar  
-Patches: anddea/patches-3.9.0.rvp  
-[Changelog](https://github.com/anddea/revanced-patches/releases/tag/v3.9.0)
+Patches: anddea/patches-3.10.0-dev.1.rvp  
+[Changelog](https://github.com/anddea/revanced-patches/releases/tag/v3.10.0-dev.1)
 
 CLI: inotia00/revanced-cli-5.0.1-all.jar  
-Patches: anddea/patches-3.9.0.rvp  
-[Changelog](https://github.com/anddea/revanced-patches/releases/tag/v3.9.0)
-
 CLI: inotia00/revanced-cli-5.0.1-all.jar  
-Patches: anddea/patches-3.9.0.rvp  
-[Changelog](https://github.com/anddea/revanced-patches/releases/tag/v3.9.0)
-
-CLI: inotia00/revanced-cli-5.0.1-all.jar  
-Patches: anddea/patches-3.9.0.rvp  
-[Changelog](https://github.com/anddea/revanced-patches/releases/tag/v3.9.0)  
+CLI: inotia00/revanced-cli-5.0.1-all.jar    
