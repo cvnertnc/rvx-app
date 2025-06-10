@@ -3,8 +3,8 @@
 # RVX-App
 ![Artifacts](./revanced-magisk/banner.png)
 [![Telegram](https://img.shields.io/badge/Follow-Telegram-blue.svg?logo=telegram)](https://t.me/cvnertnc)
-[![CI](https://github.com/cvnertnc/rvx-app/actions/workflows/ci.yml/badge.svg?event=schedule)](https://github.com/cvnertnc/rvx-app/actions/workflows/ci.yml)
 [![latest CI release](https://img.shields.io/github/v/release/cvnertnc/rvx-app?label=Release&logo=github)](https://github.com/cvnertnc/rvx-app/releases/latest)
+[![CI](https://github.com/cvnertnc/rvx-app/actions/workflows/ci.yml/badge.svg?event=schedule)](https://github.com/cvnertnc/rvx-app/actions/workflows/ci.yml)
 
 Extensive RVX-App Builder
 
