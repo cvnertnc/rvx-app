@@ -1,6 +1,6 @@
 Music: 8.12.53  
 Reddit: 2025.12.1  
-Spotify: 9.0.72.939  
+Spotify: 9.0.72.949  
 YouTube: 19.47.53  
 YouTube-NoSwipe: 19.47.53  
 
@@ -10,8 +10,8 @@ Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach root ReVanc
 [rvx-app](https://github.com/cvnertnc/rvx-app)
   
 CLI: inotia00/revanced-cli-5.0.1-all.jar  
-Patches: anddea/patches-3.12.0-dev.4.rvp  
-[Changelog](https://github.com/anddea/revanced-patches/releases/tag/v3.12.0-dev.4)
+Patches: anddea/patches-3.12.0-dev.5.rvp  
+[Changelog](https://github.com/anddea/revanced-patches/releases/tag/v3.12.0-dev.5)
 
 CLI: inotia00/revanced-cli-5.0.1-all.jar  
 CLI: inotia00/revanced-cli-5.0.1-all.jar  
