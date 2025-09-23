@@ -181,5 +181,13 @@ if [ "$KSU" ] && [ -d "/data/adb/modules/zygisk-assistant" ]; then
 fi
 
 ui_print "* Done"
-ui_print "  by j-hc (github.com/j-hc)"
+ui_print "  by cvnertnc (github.com/cvnertnc)"
+ui_print "  thanks to ReVanced Team (github.com/ReVanced)"
+ui_print "  thanks to inotia00 (github.com/inotia00)"
+ui_print "  thanks to anddea (github.com/anddea)"
+ui_print "  thanks to j-hc (github.com/j-hc)"
 ui_print " "
+
+sleep 0.5
+
+ui_print "  No need to reboot your phone"
