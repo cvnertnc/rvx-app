@@ -36,6 +36,15 @@ patcher-args = "-e 'Custom branding icon for YouTube Music' -OappIcon='revancify
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music/"
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 
+[Spotify]
+enabled = true
+app-name = "Spotify"
+build-mode = "apk"
+arch = "arm64-v8a"
+included-patches = "'Spoof client'"
+version = "auto"
+uptodown-dlurl = "https://spotify.en.uptodown.com/android"
+
 [Reddit]
 enabled = true
 build-mode = "apk"
@@ -52,15 +61,6 @@ uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
 # patcher-args = "-e 'Custom branding icon for YouTube' -OappIcon='revancify_red'"
 # apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 # uptodown-dlurl = "https://youtube.en.uptodown.com/android"
-
-# [Spotify]
-# enabled = true
-# app-name = "Spotify"
-# build-mode = "apk"
-# arch = "arm64-v8a"
-# included-patches = "'Spoof client'"
-# version = "auto"
-# uptodown-dlurl = "https://spotify.en.uptodown.com/android"
 
 # [Spotify-module]
 # enabled = true
