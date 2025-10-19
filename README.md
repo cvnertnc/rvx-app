@@ -1,10 +1,14 @@
-# ReVanced Magisk Module
-[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/rvc_magisk)
-[![CI](https://github.com/j-hc/revanced-magisk-module/actions/workflows/ci.yml/badge.svg?event=schedule)](https://github.com/j-hc/revanced-magisk-module/actions/workflows/ci.yml)
+#### ⚠️ [Original Repo](https://github.com/j-hc/revanced-magisk-module)
 
-Extensive ReVanced builder  
+# RVX-App
+![Artifacts](./revanced-magisk/banner.png)
+[![Telegram](https://img.shields.io/badge/Follow-Telegram-blue.svg?logo=telegram)](https://t.me/cvnertnc)
+[![latest CI release](https://img.shields.io/github/v/release/cvnertnc/rvx-app?label=Release&logo=github)](https://github.com/cvnertnc/rvx-app/releases/latest)
+[![CI](https://github.com/cvnertnc/rvx-app/actions/workflows/ci.yml/badge.svg?event=schedule)](https://github.com/cvnertnc/rvx-app/actions/workflows/ci.yml)
 
-Get the [latest CI release](https://github.com/j-hc/revanced-magisk-module/releases).
+Extensive RVX-App Builder
+
+Get the [latest CI release](https://github.com/cvnertnc/rvx-app/releases).
 
 Use [**zygisk-detach**](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music from Play Store if you are using magisk modules. 
 
@@ -26,25 +30,12 @@ Use [**zygisk-detach**](https://github.com/j-hc/zygisk-detach) to detach YouTube
 Note that the <a href="../../actions/workflows/ci.yml">CI workflow</a> is scheduled to build the modules and APKs everyday using GitHub Actions if there is a change in ReVanced patches. You may want to disable it.
 </details>
 
-## To include/exclude patches or patch other apps
+To include/exclude patches or patch other apps
+[**See the list of patches**](https://j-hc.github.io/rvmm-config-gen/)
 
- * Star the repo :eyes:
- * Use the repo as a [template](https://github.com/new?template_name=revanced-magisk-module&template_owner=j-hc)
- * Customize [`config.toml`](./config.toml) using [rvmm-config-gen](https://j-hc.github.io/rvmm-config-gen/)
- * Run the build [workflow](../../actions/workflows/build.yml)
- * Grab your modules and APKs from [releases](../../releases)
+Also see here [`CONFIG.md`](./CONFIG.md).
 
-also see here [`CONFIG.md`](./CONFIG.md)
-
-## Building Locally
-### On Termux
-```console
-bash <(curl -sSf https://raw.githubusercontent.com/j-hc/revanced-magisk-module/main/build-termux.sh)
-```
-
-### On Desktop
-```console
-$ git clone https://github.com/j-hc/revanced-magisk-module
-$ cd revanced-magisk-module
-$ ./build.sh
-```
+## Thanks
+[j-hc](https://github.com/j-hc)  
+[inotia00](https://github.com/inotia00)  
+[anddea](https://github.com/anddea)  
