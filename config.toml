@@ -1,72 +1,64 @@
-# add 'enabled = false' for not patching a specific app or remove it from the config
-# see https://github.com/cvnertnc/rvx-app/blob/main/CONFIG.md for more detailed explanations
-# you can use rvmm-config-gen to generate a config
-# enabled = true/false
-
-enable-magisk-update = true
+enable-module-update = true # set this to false if you do not want to receive updates for the module
 parallel-jobs = 1
-compression-level = 9
-remove-rv-integrations-checks = true
 
-patches-source = "anddea/revanced-patches"
-cli-source = "inotia00/revanced-cli"
-rv-brand = "RVX App"
+# add 'enabled = false' for not patching a specific app or remove it from the config
+# see https://github.com/j-hc/revanced-magisk-module/blob/main/CONFIG.md for more detailed explanations
 
-patches-version = "dev"
-cli-version = "dev"
+# you can use rvmm-config-gen to generate a config
 
 [YouTube]
-enabled = true
 build-mode = "both"
-included-patches = "'Custom header for YouTube' 'Swipe controls'"
-excluded-patches = "'Alternative thumbnails' 'Custom Shorts action buttons' 'Disable splash animation' 'Enable gradient loading screen' 'Force player buttons background' 'Hide action buttons' 'Hide feed components' 'Hide feed flyout menu' 'Hook download actions' 'Shorts components' 'Theme'"
-version = "20.21.37"
-patcher-args = "-e 'Custom branding icon for YouTube' -OappIcon='revancify_red'"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
+archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
+
+[YouTube-Morphe]
+app-name = "YouTube"
+patches-source = "MorpheApp/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "Morphe"
+build-mode = "both"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
+uptodown-dlurl = "https://youtube.en.uptodown.com/android"
+archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
 
 [Music]
-enabled = true
 build-mode = "both"
-arch = "arm64-v8a"
-included-patches = "'Custom header for YouTube Music' 'Disable music video in album' 'Hide overlay filter' 'Hide player overlay filter'"
-excluded-patches = "'Dark theme'"
-version = "8.12.54"
-patcher-args = "-e 'Custom branding icon for YouTube Music' -OappIcon='revancify_red'"
-apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music/"
+arch = "both"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
+archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
 
-[Spotify]
-enabled = true
-app-name = "Spotify"
-build-mode = "apk"
-arch = "arm64-v8a"
-included-patches = "'Spoof client'"
-version = "auto"
-uptodown-dlurl = "https://spotify.en.uptodown.com/android"
+[Music-Morphe]
+app-name = "Music"
+patches-source = "MorpheApp/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "Morphe"
+build-mode = "both"
+arch = "both"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
+uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
+archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
 
-[Reddit]
-enabled = true
-build-mode = "apk"
-arch = "arm64-v8a"
-version = "auto"
+[Reddit-Morphe]
+app-name = "Reddit"
+rv-brand = "Morphe"
+build-mode = "both"
+patches-source = "MorpheApp/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/redditinc/reddit/"
+archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.reddit.frontpage"
 uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
+dpi = "120-640dpi"
 
-# [YouTube-NoSwipe]
-# enabled = true
-# build-mode = "both"
-# included-patches = "'Custom header for YouTube'"
-# excluded-patches = "'Alternative thumbnails' 'Custom Shorts action buttons' 'Disable splash animation' 'Enable gradient loading screen' 'Force player buttons background' 'Hide action buttons' 'Hide feed components' 'Hide feed flyout menu' 'Hook download actions' 'Shorts components' 'Swipe controls' 'Theme'"
-# version = "20.21.37"
-# patcher-args = "-e 'Custom branding icon for YouTube' -OappIcon='revancify_red'"
-# apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-# uptodown-dlurl = "https://youtube.en.uptodown.com/android"
+[GooglePhotos]
+build-mode = "both"
+arch = "both"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/photos/"
+uptodown-dlurl = "https://google-photos.en.uptodown.com/android"
+archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.photos"
 
-# [Spotify-module]
-# enabled = true
-# app-name = "Spotify"
-# build-mode = "module"
-# arch = "arm64-v8a"
-# version = "auto"
-# uptodown-dlurl = "https://spotify.en.uptodown.com/android"
-# patcher-args = "-d 'Spoof signature'"
+[Twitch]
+enabled = false
+apkmirror-dlurl = "https://www.apkmirror.com/apk/twitch-interactive-inc/twitch/"
+uptodown-dlurl = "https://twitch.en.uptodown.com/android"
