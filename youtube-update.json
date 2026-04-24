@@ -1,6 +1,6 @@
 {
-  "version": "v20.21.37 (patches dev.9)",
-  "versionCode": 92,
-  "zipUrl": "https://github.com/cvnertnc/rvx-app/releases/download/92/youtube-rvx-app-magisk-v20.21.37-all.zip",
+  "version": "v20.05.46 (patches dev.13.mpp)",
+  "versionCode": 93,
+  "zipUrl": "https://github.com/cvnertnc/rvx-app/releases/download/93/youtube-rvx-app-module-v20.05.46-all.zip",
   "changelog": "https://raw.githubusercontent.com/cvnertnc/rvx-app/update/build.md"
 }
