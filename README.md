@@ -30,6 +30,9 @@ Use [**zygisk-detach**](https://github.com/j-hc/zygisk-detach) to detach YouTube
 Note that the <a href="../../actions/workflows/ci.yml">CI workflow</a> is scheduled to build the modules and APKs everyday using GitHub Actions if there is a change in ReVanced patches. You may want to disable it.
 </details>
 
+If you are having trouble with the classic mount method of the modules such as,
+You can consider using [rvmm-zygisk-mount](https://github.com/j-hc/rvmm-zygisk-mount)
+
 To include/exclude patches or patch other apps
 [**See the list of patches**](https://j-hc.github.io/rvmm-config-gen/)
 
@@ -37,5 +40,7 @@ Also see here [`CONFIG.md`](./CONFIG.md).
 
 ## Thanks
 [j-hc](https://github.com/j-hc)  
+[ReVanced](https://github.com/ReVanced)  
 [inotia00](https://github.com/inotia00)  
+[MorpheApp](https://github.com/MorpheApp)  
 [anddea](https://github.com/anddea)  
