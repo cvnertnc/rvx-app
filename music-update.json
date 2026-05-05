@@ -1,6 +1,6 @@
 {
   "version": "v8.30.54 (patches 4.0.0.mpp)",
-  "versionCode": 96,
-  "zipUrl": "https://github.com/cvnertnc/rvx-app/releases/download/96/music-rvx-app-module-v8.30.54-arm64-v8a.zip",
+  "versionCode": 97,
+  "zipUrl": "https://github.com/cvnertnc/rvx-app/releases/download/97/music-rvx-app-module-v8.30.54-arm64-v8a.zip",
   "changelog": "https://raw.githubusercontent.com/cvnertnc/rvx-app/update/build.md"
 }
