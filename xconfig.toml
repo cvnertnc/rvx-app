@@ -18,10 +18,8 @@ cli-version = "latest"
 [YouTube]
 enabled = true
 build-mode = "both"
-included-patches = "'Custom header for YouTube' 'MaterialYou'"
-excluded-patches = "'Alternative thumbnails' 'Custom Shorts action buttons' 'Disable splash animation' 'Enable gradient loading screen' 'Force player buttons background' 'Hide action buttons' 'Hide feed components' 'Hide feed flyout menu' 'Hook download actions' 'Set transcript cookies' 'Shorts components' 'Swipe controls' 'Theme'"
-version = "20.05.46"
-patcher-args = "-e 'Custom branding icon for YouTube' -OappIcon='revancify_red'"
+version = "auto"
+patcher-args = "-d 'Custom branding name for YouTube' -e 'Theme' -e 'Custom header for YouTube' -e 'Custom branding icon for YouTube' -OappIcon='youtube'"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
@@ -30,19 +28,17 @@ archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.y
 enabled = true
 build-mode = "both"
 arch = "arm64-v8a"
-included-patches = "'Custom header for YouTube Music' 'Disable music video in album' 'Hide overlay filter' 'Hide player overlay filter'"
-excluded-patches = "'Dark theme'"
-version = "8.30.54"
-patcher-args = "-e 'Custom branding icon for YouTube Music' -OappIcon='revancify_red'"
+version = "auto"
+patcher-args = "-d 'Custom branding name for YouTube Music' -e 'Custom header for YouTube Music' -e 'Custom branding icon for YouTube Music' -OappIcon='youtube_music'"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
 
 [Reddit]
-enabled = true
+enabled = false
 build-mode = "apk"
 arch = "arm64-v8a"
-version = "auto"
+version = "latest"
 # apkmirror-dlurl = "https://www.apkmirror.com/apk/redditinc/reddit/"
 # archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.reddit.frontpage"
 uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
