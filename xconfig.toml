@@ -19,7 +19,7 @@ cli-version = "latest"
 enabled = true
 build-mode = "both"
 version = "latest"
-patcher-args = "-d 'Custom branding name for YouTube' -e 'Theme' -e 'Custom header for YouTube' -e 'Custom branding icon for YouTube' -OappIcon='revancify_red'"
+patcher-args = "-d 'Custom branding name for YouTube' -e 'Theme' -e 'Custom header for YouTube' -e 'Custom branding icon for YouTube' -OappIcon='youtube'"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
