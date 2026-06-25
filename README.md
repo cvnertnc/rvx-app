@@ -31,7 +31,7 @@ Note that the <a href="../../actions/workflows/ci.yml">CI workflow</a> is schedu
 </details>
 
 If you are having trouble with the classic mount method of the modules such as,
-You can consider using [rvmm-zygisk-mount](https://github.com/j-hc/rvmm-zygisk-mount)
+You can consider using [rvx-zygisk-mount](https://github.com/cvnertnc/rvx-zygisk-mount)
 
 To include/exclude patches or patch other apps
 [**See the list of patches**](https://j-hc.github.io/rvmm-config-gen/)
