@@ -34,6 +34,28 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
 
+# [YouTube]
+# enabled = false
+# build-mode = "apk"
+# version = "auto"
+# patches-source = "MorpheApp/morphe-patches"
+# patcher-args = "-e 'Custom branding' -OcustomName='YouTube' -e 'Change package name' -OpackageName='cvnertnc.youtube' -d 'Custom branding' -OcustomIcon -e 'Return YouTube Dislike' -d 'Swipe controls'"
+# #patcher-args = "-e 'Custom branding' -OcustomName='YouTube' -d 'Change package name' -d 'Custom branding' -OcustomIcon -e 'Return YouTube Dislike' -d 'Swipe controls'"
+# apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
+# uptodown-dlurl = "https://youtube.en.uptodown.com/android"
+# #archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
+
+# [Music]
+# enabled = true
+# build-mode = "apk"
+# arch = "arm64-v8a"
+# version = "auto"
+# patches-source = "MorpheApp/morphe-patches"
+# patcher-args = "-e 'Custom branding' -OcustomName='YouTube Music' -e 'Change package name' -OpackageName='cvnertnc.youtube.music' -d 'Custom branding' -OcustomIcon"
+# apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
+# uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
+# archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
+
 [Reddit]
 enabled = false
 build-mode = "apk"
