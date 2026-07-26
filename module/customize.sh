@@ -183,12 +183,5 @@ rm -rf "${MODPATH:?}/bin" "$MODPATH/stock/"
 cp -f "$MODPATH/module.prop" "$MODPATH/module.prop.orig"
 
 ui_print "* Done. No need to reboot."
-ui_print "  template by j-hc (github.com/j-hc)"
-ui_print "  rvx-app by cvnertnc (github.com/cvnertnc)"
-ui_print "  thanks to ReVanced Team (github.com/ReVanced)"
-ui_print "  thanks to inotia00 (github.com/inotia00)"
-ui_print "  thanks to MorpheApp (github.com/MorpheApp)"
-ui_print "  thanks to anddea (github.com/anddea)"
+ui_print "  by j-hc (github.com/j-hc)"
 ui_print " "
-
-sleep 0.5
