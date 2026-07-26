@@ -1,6 +1,5 @@
 #!/system/bin/sh
-MODDIR="$(dirname "$(readlink -f "$0")")"
-export MODDIR
+MODDIR=${0%/*}
 . "$MODDIR/utils.sh"
 
 run() {
@@ -14,7 +13,7 @@ run() {
 	do sleep 2; done
 
 	if [ $SVCL != 0 ]; then
-		ch_desc_err "App not installed: '$BASEPATH'"
+		ch_desc_err "App not installed"
 		return
 	fi
 	sleep 4
