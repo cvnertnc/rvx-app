@@ -32,18 +32,12 @@ else
 	fi
 fi
 
+IS_SYSTEM_APP=false
 INS=true
 if BASEPATH=$(get_basepath); then
-	if [ "${BASEPATH:1:4}" != data ]; then
-		ui_print "* Detected $PKG_NAME as a system app"
-		SCNM="/data/adb/post-fs-data.d/$PKG_NAME-uninstall.sh"
-		mkdir -p /data/adb/post-fs-data.d
-		echo "mount -t tmpfs none $BASEPATH" >"$SCNM"
-		chmod +x "$SCNM"
-		ui_print "* Created the uninstall script."
-		ui_print ""
-		ui_print "* Reboot and reflash the module!"
-		abort
+	if [ "${BASEPATH:1:4}" != "data" ]; then
+		IS_SYSTEM_APP=true
+		ui_print "* $PKG_NAME is a system app"
 	fi
 
 	VERSION=$(get_app_version)
@@ -56,12 +50,6 @@ if BASEPATH=$(get_basepath); then
 			module:    '$PKG_VER'"
 		abort
 	fi
-
-	# TODO:
-	# elif "${MODPATH:?}/bin/$ARCH/cmpr" "$BASEPATH/base.apk" "$MODPATH/$PKG_NAME.apk"; then
-	# 	ui_print "* $PKG_NAME is up-to-date"
-	# 	INS=false
-	# fi
 fi
 
 install() {
@@ -97,14 +85,22 @@ install() {
 		if ! op=$(pmex install-commit "$SES"); then
 			ui_print "$op"
 			if echo "$op" | grep -q -e INSTALL_FAILED_VERSION_DOWNGRADE -e INSTALL_FAILED_UPDATE_INCOMPATIBLE -e INSTALL_FAILED_DUPLICATE; then
-				ex_unins_arg=""
-				if echo "$op" | grep -q INSTALL_FAILED_DUPLICATE; then
-					ui_print "* Uninstalling without data loss..."
-					ex_unins_arg="-k"
-				else
-					ui_print "* Uninstalling..."
+				if [ "$IS_SYSTEM_APP" = true ]; then
+					mkdir -p /data/adb/rvhc/empty /data/adb/post-fs-data.d
+					chcon u:object_r:system_file:s0 /data/adb/rvhc/empty
+					P="/data/adb/post-fs-data.d/$PKG_NAME-uninstall.sh"
+					echo "mount -o bind /data/adb/rvhc/empty ${BASEPATH}" >"$P"
+					chmod +x "$P"
+
+					ui_print "* Created the uninstall script."
+					ui_print ""
+					ui_print "* Reboot and reflash the module!"
+					install_err=" "
+					break
 				fi
-				if ! op=$(pmex uninstall --user 0 $ex_unins_arg "$PKG_NAME"); then
+
+				ui_print "* Uninstalling..."
+				if ! op=$(pmex uninstall --user 0 "$PKG_NAME"); then
 					ui_print "$op"
 					if [ $IT = 2 ]; then
 						install_err="ERROR: pm uninstall failed."
@@ -183,12 +179,5 @@ rm -rf "${MODPATH:?}/bin" "$MODPATH/stock/"
 cp -f "$MODPATH/module.prop" "$MODPATH/module.prop.orig"
 
 ui_print "* Done. No need to reboot."
-ui_print "  template by j-hc (github.com/j-hc)"
-ui_print "  rvx-app by cvnertnc (github.com/cvnertnc)"
-ui_print "  thanks to ReVanced Team (github.com/ReVanced)"
-ui_print "  thanks to inotia00 (github.com/inotia00)"
-ui_print "  thanks to MorpheApp (github.com/MorpheApp)"
-ui_print "  thanks to anddea (github.com/anddea)"
+ui_print "  by j-hc (github.com/j-hc)"
 ui_print " "
-
-sleep 0.5
