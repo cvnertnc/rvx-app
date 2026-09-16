@@ -45,33 +45,39 @@ enable-update-checks = true
 # patches-source = "MorpheApp/morphe-patches"
 # cli-source = "MorpheApp/morphe-cli"
 # patcher-args = "-e 'Custom branding' -OcustomName='YouTube' -e 'Change package name' -OpackageName='cvnertnc.youtube' -d 'Custom branding' -OcustomIcon -e 'Return YouTube Dislike' -d 'Swipe controls'"
+# patcher-args = "-e 'Custom branding' -OcustomName='YouTube' -d 'Custom branding' -OcustomIcon -e 'Return YouTube Dislike' -d 'Swipe controls'"
 # apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 # uptodown-dlurl = "https://youtube.en.uptodown.com/android"
-# #archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
+# archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
 # enable-update-checks = true
 
 # [Music]
 # enabled = false
 # build-mode = "apk"
 # arch = "arm64-v8a"
-# version = "latest"
+# version = "auto"
 # patches-version = "latest"
 # cli-version = "latest"
 # patches-source = "MorpheApp/morphe-patches"
 # cli-source = "MorpheApp/morphe-cli"
 # patcher-args = "-e 'Custom branding' -OcustomName='YouTube Music' -e 'Change package name' -OpackageName='cvnertnc.youtube.music' -d 'Custom branding' -OcustomIcon"
+# patcher-args = "-e 'Custom branding' -OcustomName='YouTube Music' -d 'Custom branding' -OcustomIcon"
 # apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 # uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 # archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
 # enable-update-checks = true
 
-[Reddit]
-enabled = false
-build-mode = "apk"
-arch = "arm64-v8a"
-version = "latest"
+# [Reddit]
+# enabled = false
+# build-mode = "apk"
+# arch = "arm64-v8a"
+# version = "auto"
+# patches-version = "latest"
+# cli-version = "latest"
+# patches-source = "MorpheApp/morphe-patches"
+# cli-source = "MorpheApp/morphe-cli"
 # apkmirror-dlurl = "https://www.apkmirror.com/apk/redditinc/reddit/"
 # archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.reddit.frontpage"
-uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
-dpi = "120-640dpi"
-enable-update-checks = true
+# uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
+# dpi = "120-640dpi"
+# enable-update-checks = true
